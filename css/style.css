@@ -1,0 +1,376 @@
+/* scroll to the top btn */
+.scroll-top {
+    text-decoration: none;
+    color: #0078FF;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition-duration: 400ms;
+    z-index: 99;
+}
+
+.scroll-top:hover {
+    color: #298eff;
+}
+
+
+/* navbar start */
+.navbar-dark, .navbar[data-bs-theme=dark] {
+    --bs-navbar-color: #fff;
+    --bs-navbar-hover-color: #fff;
+}
+
+.nav-item .dropdown-item:hover {
+    color: #0078FF;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+}
+
+.navbar .dropdown:hover > .dropdown-menu, .navbar .dropend:hover > .dropdown-menu{
+    display: block;
+    margin-top: 0.125em;
+    margin-left: 0.125em;
+}
+
+
+@media (min-width:769px) {
+    .navbar .dropend:hover > .dropdown-menu {
+        position: absolute;
+        left: 100%;
+        top: 0;
+    }
+}
+
+
+@media (min-width:991px) {
+    .nav-item a::before {
+        content: "";
+        position: absolute;
+        top: 93%;
+        left: 10%;
+        width: 0;
+        height: 2px;
+        background-color: #ffffff;
+        transition-duration: 0.5s;
+    }
+    
+    .nav-item a:hover::before {
+        width: 70%;
+    }
+
+    .navbar-nav .nav-link.active:before {
+        width: 70%;
+    }
+
+}
+
+/* navbar end */
+
+
+/* header start */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/hero-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header h1 {
+    font-size: 72px;
+    text-align: center;
+}
+
+#element {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.typed-cursor {
+    font-size: 40px;
+    color: white;
+}
+/* header end */
+
+/* about start */
+.about {
+    background-color: #F5F5F5;
+}
+
+.about h3 {
+    font-size: 18px;
+}
+
+.about span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.progress, .progress-stacked {
+    --bs-progress-height: 12px;
+    --bs-progress-bg: #CDE1F8;
+}
+
+.about h2::after {
+    content: "";
+    position: absolute;
+    width: 18%;
+    border-bottom: 3px #0078FF solid;
+    bottom: 35px;
+    left: 0;
+}
+
+/* about end */
+
+/* services start */
+.services {
+    background-color: #F5F5F5;
+}
+
+.services h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.services h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    border-bottom: 5px #0078FF solid;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.services .my-icon {
+    text-align: center;
+    align-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 8px solid #0078FF;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition-duration: 600ms;
+}
+
+.services h3 {
+    padding-top: 130px;
+}
+
+.services .item:hover .my-icon {
+    background-color: #0078ff;
+    color: white;
+    border: 8px solid #CDE1F8;
+}
+
+/* services end */
+
+/* counter start */
+
+.counter {
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7),rgba(0, 120, 255, 0.7)),url(../images/counters-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.counter .icon2 div {
+    text-align: center;
+    align-content: center;
+    width: 70px;
+    height: 70px;
+    border: 5px white solid;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.counter h3 {
+    padding-top: 80px;
+}
+
+/* counter end */
+
+/* work start */
+
+.work {
+    background-color: #F5F5F5;
+}
+
+.work h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.work h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    border-bottom: 5px #0078FF solid;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.work .left span {
+    color: #0078FF;
+}
+
+.work .left div {
+    font-size: 13px;
+}
+
+.work .item {
+    overflow: hidden;
+}
+
+.work .item .card-img {
+    overflow: hidden;
+    width: 100%;
+}
+
+.work .container .item .card-content {
+    background-color: white;
+    z-index: 20;
+}
+
+.work .item img {
+    transition-duration: 800ms;
+}
+
+.work .item:hover img {
+    transform: scale(120%);
+}
+
+/* work end */
+
+/* xavi section */
+
+.xavi {
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7),rgba(0, 120, 255, 0.7)),url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.carousel-inner img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* xavi section */
+
+/* blog start */
+
+.blog {
+    background-color: #F5F5F5;
+}
+
+.blog h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.blog h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    border-bottom: 5px #0078FF solid;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.blog .container .row .list-group-item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.blog .container .row .card-title::after {
+    content: "TRAVEL";
+    background-color: #0078FF;
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* blog send */
+
+/* contact start */
+
+.contact {
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7),rgba(0, 120, 255, 0.7)),url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact h2::after {
+    content: "";
+    position: absolute;
+    width: 18%;
+    border-bottom: 3px #0078FF solid;
+    bottom: 35px;
+    left: 0;
+}
+
+.contact .btn-lg {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    --bs-border-color: #0078FF;
+}
+
+.contact i {
+    transition: all 400ms ease-out;
+}
+
+.contact a:hover i {
+    color: white;
+    background-color: #0078FF;
+    --bs-border-color: #CDE1F8;
+}
+
+/* contact end */
+
+/* footer */
+
+.footer {
+    background-color: #0062D3;
+    box-shadow: inset rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+/* footer */
